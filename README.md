@@ -11,7 +11,13 @@ https://github.com/fchollet/keras/blob/44bf298ec3236f4a7281be04716a58163469b4de/
 
 # Installation
 
-gcc -O3 -fopenmp -lm ZFC_VGG16_CPU.c -o ZFC_VGG16_CPU.exe
+[WIN32]
+
+    gcc -O3 ZFC_VGG16_CPU.c -lm -o vgg16_zfc.exe -lm -fopenmp
+    
+[LINUX]
+
+    gcc -O3 ZFC_VGG16_CPU.c -lm -o vgg16_zfc -lm -fopenmp
 
 # Usage
 
